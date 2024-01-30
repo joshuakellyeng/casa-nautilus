@@ -1,0 +1,35 @@
+/* Init attempt */
+.faqs {
+	padding: 0;
+	background-image: url(../assets/images/sunsets.png);
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 50vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: left;
+}
+
+.faqs .content {
+	text-align: left;
+	margin-left: 12rem;
+	color: white;
+}
+
+.faqs .content h2 {
+	font-size: 7rem;
+	text-transform: capitalize;
+	color: var(--white);
+	margin: 2rem 0;
+}
+.faqs .content p {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.faqs .content a {
+	margin: 1rem 0;
+}
+
+/* HOME END */

@@ -5,6 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Casa Nautilus</title>
 		<!-- Font Awesome CDN -->
+
+		<!-- FAVICONS -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./assets/favicons/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./assets/favicons/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<!-- FONTAWESOME CDN -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,12 +46,13 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/about.css" />
 	</head>
 	<body>
 		<!-- HEADER START -->
 		<header class="header">
-			<a href="#" class="logo"
+			<a href="index.html" class="logo"
 				><img
 					src="assets/svgs/casa-nautilus-symbol-1.0.svg"
 					alt="Casa Nautilus Logo"
@@ -31,10 +60,10 @@
 
 			<nav class="navbar">
 				<a href="#home">home</a>
-				<a href="#about">about</a>
-				<a href="#rooms">rooms</a>
-				<a href="#faq">faq</a>
-				<a href="#contact">contact</a>
+				<a href="pages/about.html">about</a>
+				<a href="pages/rooms.html">rooms</a>
+				<a href="pages/faqs.html">faqs</a>
+				<a href="pages/contact.html">contact</a>
 			</nav>
 			<a href="#reservation" class="btn">book now</a>
 
@@ -44,7 +73,7 @@
 
 		<!-- HOME START -->
 
-		<section class="home" id="home">
+		<section class="home">
 			<!-- Slider Element -->
 			<div class="content">
 				<h2>discover tranquility at casa nautilus</h2>
@@ -109,7 +138,7 @@
 
 		<!-- ABOUT START -->
 
-		<section class="about" id="about">
+		<section class="about-section" id="about">
 			<div class="about-content">
 				<p class="all-caps">welcome to casa nautilus</p>
 				<h3>a coastal beauty with historic charm</h3>
@@ -262,30 +291,102 @@
 
 		<!-- REVIEW START -->
 
-		<section class="review-section">
-			<div class="review-container">
-				<h3>“I wouldn’t stay anywhere else in Cadiz!”</h3>
+		<div class="review-section">
+			<div class="swiper review-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide slide">
+						<div class="review-content">
+							<h3>“I wouldn’t stay anywhere else in Cadiz!”</h3>
+							<div class="star-rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<p>
+								My stay at Casa Nautilus was an absolute delight! The boutique
+								charm, personalized service, and attention to detail exceeded
+								expectations. From the uniquely designed rooms to the enchanting
+								rooftop terrace with stunning views, every aspect of this hidden
+								gem in Cadiz made our experience truly exceptional. Lastly what
+								a great price.
+							</p>
 
-				<div class="star-rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
+							<div>
+								<p class="review-name">Cristina P.</p>
+								<p class="review-date">May 2023</p>
+							</div>
+
+							<a href="#"
+								>View All the Reviews <i class="fa fa-chevron-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="swiper-slide slide">
+						<div class="review-content">
+							<h3>“Excellent accommodation in the heart of the city!”</h3>
+							<div class="star-rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<p>
+								Excellent accommodation in the heart of the city. Clean,
+								economical and very charming. Rooms with everything you need to
+								be comfortable. We loved the nautical theme. Totally
+								recommended. We will be back!
+							</p>
+
+							<div>
+								<p class="review-name">Maria F.</p>
+								<p class="review-date">Dec 2023</p>
+							</div>
+
+							<a href="#"
+								>View All the Reviews <i class="fa fa-chevron-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="swiper-slide slide">
+						<div class="review-content">
+							<h3>“I can't wait to return!”</h3>
+							<div class="star-rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+							<p>
+								We had an interior room with no window to the outside and it was
+								very quiet. The room was spacious and clean and had all the
+								amenities you'd need such as air con, tv, hair dryer. The
+								welcome beer was great and it was nice to sit on the roof
+								terrace with a coffee in the morning. Tea and coffee and tap
+								water is available to help yourself to all day and you can buy a
+								beer or bottle of water very cheaply. The location is simply
+								perfect, steps from the cathedral and a 10 min easy walk from
+								the train station.
+							</p>
+
+							<div>
+								<p class="review-name">Sarah S.</p>
+								<p class="review-date">Jun 2023</p>
+							</div>
+
+							<a href="#"
+								>View All the Reviews <i class="fa fa-chevron-right"></i
+							></a>
+						</div>
+					</div>
 				</div>
-
-				<p class="review">
-					My stay at Casa Nautilus was an absolute delight! The boutique charm,
-					personalized service, and attention to detail exceeded expectations.
-					From the uniquely designed rooms to the enchanting rooftop terrace
-					with stunning views, every aspect of this hidden gem in Cadiz made our
-					experience truly exceptional. Lastly what a great price.
-				</p>
-
-				<p class="review-name">Cristina C.</p>
-				<p class="review-date">May 2023</p>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
-		</section>
+		</div>
 
 		<!-- REVIEW END -->
 
@@ -313,7 +414,7 @@
 							<a href="#">rooms</a>
 						</li>
 						<li>
-							<a href="#">faq</a>
+							<a href="#">faqs</a>
 						</li>
 						<li>
 							<a href="#">contact</a>

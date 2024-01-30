@@ -170,14 +170,13 @@ section {
 /* Init attempt */
 .home {
 	padding: 0;
-	background: url(assets/images/hero.png) no-repeat;
+	background: url(../assets/images/hero.png) no-repeat;
 	min-height: 100vh;
 	background-size: cover !important;
 	background-position: top !important;
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	z-index: -1;
 }
 
 .home .content {
@@ -245,13 +244,13 @@ section {
 
 /* ABOUT SECTION START*/
 
-.about {
+.about-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	height: 80vh;
-	background: url(assets/images/beach.jpeg) top no-repeat;
+	background: url(../assets/images/beach.jpeg) top no-repeat;
 	background-size: cover;
 }
 
@@ -392,13 +391,9 @@ section {
 .review-section {
 	width: 100vw;
 	height: 80vh;
-	background: url(assets/images/palms.png);
+	background: url(../assets/images/palms.png);
 	background-size: cover;
 	color: var(--white);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 .review-container {
@@ -410,22 +405,28 @@ section {
 	align-items: center;
 	text-align: center;
 }
-
-.review-container h3 {
-	font-size: 6.4rem;
+.review-section .slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
 }
 
 .star-rating {
 	font-size: 4rem;
 }
 
-.review {
+.review-content {
 	font-size: 2.4rem;
-	text-transform: none;
+	text-align: center;
+	width: 50%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .review-name {
-	font-size: 2.4rem;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 3.6px;
@@ -436,6 +437,36 @@ section {
 	font-size: 16px;
 	font-style: italic;
 	letter-spacing: 2.4px;
+}
+
+.review-content h3 {
+	font-size: 6.4rem;
+}
+
+.review-content a {
+	color: white;
+}
+
+.review-content p {
+	text-transform: none;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--white);
+}
+
+.swiper-button-next {
+	margin-right: 12rem;
+}
+
+.swiper-button-prev {
+	margin-left: 12rem;
 }
 
 /* REVIEWS END */
@@ -464,8 +495,11 @@ section {
 
 .footer-nav a {
 	color: var(--primary);
-	text-transform: uppercase;
 	font-size: 1.8rem;
+}
+
+.footer-nav i {
+	margin-right: 2rem;
 }
 
 .footer-nav li {

@@ -1,0 +1,64 @@
+/* BANNER */
+.about {
+	padding: 0;
+	background-image: url(../assets/images/doors.png);
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position-y: 48%;
+	min-height: 50vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: left;
+}
+
+.about .content {
+	width: 80rem;
+	text-align: left;
+	margin-left: 12rem;
+	color: white;
+}
+
+.about .content h2 {
+	font-size: 7rem;
+	text-transform: capitalize;
+	color: var(--white);
+	margin: 2rem 0;
+}
+.about .content p {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.about .content a {
+	margin: 1rem 0;
+}
+
+/* BANNER */
+
+/* GRID */
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	grid-column-gap: 20px;
+}
+
+div img {
+	width: 100%;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 11 / 7;
+}
+.div2 {
+	grid-area: 1 / 7 / 4 / 9;
+}
+.div3 {
+	grid-area: 3 / 8 / 9 / 12;
+}
+.div4 {
+	grid-area: 8 / 11 / 11 / 13;
+}
+
+/* GRID */
